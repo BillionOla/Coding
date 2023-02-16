@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding - New hobby</title>
+    <style>
+        body {
+            background: rgb(81, 64, 81);
+        }
+        .dark {
+            background: black;
+            color: white;
+        }
+        .dark button {
+          background: white;
+          color:black;
+        }
+        .dark a{
+            color: plum;
+        }
+        .dark .container {
+            background: rgba(255, 255, 255, 0.48)
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+        img {
+            width:100%;
+            height:100%;
+        }
+        .grid{
+            margin: 30px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 15px;
+           
+        }
+        .grid img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        p {
+            font-size:15px;
+            line-height: 1.5;
+        }
+        .women-intro-coding{
+        border-radius: 10px;
+        transition: 150ms ease-in-out;
+        }
+        .women-intro-coding:hover {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width:650px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+        button {
+            display: block;
+            border: 1px solid plum;
+            padding: 10px 15px;
+            background:white;
+            font-size: 20px;
+            border-radius: 20px;
+            margin: 0 auto;
+            transition: all 150ms ease-in-out;
+        }
+        button:hover {
+            background: plum;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 15px;
+        }
+        .theme-button {
+             font-size:10px;
+             background:black;
+             color:white;
+             padding: 5 8px;
+        }
+        .theme-button:hover {
+            color : black;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-button">
+        Dark theme
+    </button>
+    <br>
+    <div class="container">
+    <h1> 🖥 Why I love Coding</h1>
+    <h2>Coding is my new hobby</h2>
+   
+    <a 
+    href="https://blog.hubspot.com/website/how-to-start-coding"></a>
+    <img
+       src="https://s3.amazonaws.com/shecodesio-production/students/avatars/000/128/422/medium/Image.jpeg?1672883174"
+       alt="women coding"
+       class="women-intro-coding"
+    >
+    <div class="grid">
+    <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBU4jEhZmbcRLxATuwoJnvOBOJA9KJRsywyg&usqp=CAU"
+       alt="them about women coding"
+       class="women-coding-picture"
+    >
+    <img
+       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuUZ0SHrhY6blso_d7OFZahi0BSULcttOAyw&usqp=CAU"
+       alt=""
+    >
+    <img
+       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTDO41rwpj8BKx_PFffUx_rXI7oelbeuHzuL_0uLhfz5e6jqSub7v2HF9VdCoz5R1hUgk&usqp=CAU"
+       alt=""
+    >
+    <img
+       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTV2jtmTgmX319Ck-RfDbL2plyKP5P7MwPmA&usqp=CAU"
+       alt=""
+    >
+    </div>
+     <h3>
+        How to start coding
+    </h3>
+    <p>
+        Coding is one of the most valuable skills you can build. 
+        If you’re searching for "how to learn coding," it might be because you want to advance your career.
+        <br/></br/>
+        📖 
+        <a
+        href="https://blog.hubspot.com/website/how-to-start-coding">
+        <strong> Read on wikipidia </strong>
+        </a>
+    </p>
+    <button class="start-Button">
+        Learn coding
+    </button>
+    <footer>
+         Coded with 💜 by Billion Olagbaye 
+    </footer>
+
+     <script>
+
+      function changeTheme() {
+        let body = document.querySelector("body");
+
+        if (body.classList.contains("dark")) {
+            body.classList.remove("dark");
+        } else {
+            body.classList.add("dark")
+        }
+      }
+
+      let themeButton = document.querySelector("button");
+
+      themeButton.addEventListener("click", changeTheme);
+      
+
+           function newButton() {
+           let name = prompt("what is your name?");
+           let coding = prompt("Do you want to learn coding?");
+        
+           alert(name + ", Congratutions you are in the right place");
+           }
+           let startButton = document.querySelector(".start-Button");
+           startButton.addEventListener("click", newButton);
+
+    </script>
+</body>
+</html>
